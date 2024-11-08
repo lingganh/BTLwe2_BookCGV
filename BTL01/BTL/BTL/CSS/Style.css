@@ -1,0 +1,607 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: auto;
+    font-size: 16px;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header .img-top img {
+    padding: 0 22%;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.header-top {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 22%;
+    align-content: flex-end;
+}
+
+.header-top a {
+    color: #333;
+    margin: 0 10px;
+}
+
+.header-top i {
+    margin: 0 5px;
+}
+
+.header-top .item-language {
+    background-color: #e71a0f;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.header-top .item-language .item-language-vn {
+    background-color: #e71a0f;
+    color: white;
+    margin: 0;
+    border-radius: 5px 5px 0 5px;
+}
+
+.header-top .item-language .item-language-en {
+    background-color: #666;
+    color: white;
+    margin: 0;
+    border-radius: 5px 5px 5px 0px;
+}
+
+.header-center {
+    z-index: 20;
+    width: auto;
+    margin: 0 auto;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-top.png) repeat-x scroll left bottom transparent;
+    height: 135px;
+}
+
+.header-center .header-center-container {
+    padding: 0 22%;
+    width: auto;
+    display: flex;
+}
+
+.nav-header .li {
+    position: relative;
+}
+
+.nav-header {
+    z-index: 10;
+}
+
+.header-center .header-center-container .header-center-logo {
+    padding-top: 45px;
+}
+
+.header-center .header-center-container nav {
+    padding-top: 82px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.header-center .header-center-container a {
+    color: #000000;
+    padding-left: 25px;
+    font-weight: 700;
+}
+
+.header-center .header-center-container li {
+    list-style: none;
+}
+
+.header-center .header-center-container .header-center-movie,
+.header-center .header-center-container .header-center-rapcgv,
+.header-center .header-center-container .header-center-member,
+.header-center .header-center-container .header-center-cultureplex {
+    color: #fff;
+}
+
+.header-center .header-center-container .header-center-movie .header-center-item,
+.header-center .header-center-container .header-center-rapcgv .header-center-item,
+.header-center .header-center-container .header-center-member .header-center-item,
+.header-center .header-center-container .header-center-cultureplex .header-center-item {
+    display: none;
+    position: absolute;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_menu_hover.png);
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    /* border: 2px solid #fff; */
+    border: 2px solid #828282;
+}
+
+.header-center .header-center-container .header-center-movie:hover .header-center-item,
+.header-center .header-center-container .header-center-rapcgv:hover .header-center-item,
+.header-center .header-center-container .header-center-member:hover .header-center-item,
+.header-center .header-center-container .header-center-cultureplex:hover .header-center-item {
+    display: block;
+}
+
+.header-center .header-center-container .header-center-movie .header-center-item li,
+.header-center .header-center-container .header-center-rapcgv .header-center-item li,
+.header-center .header-center-container .header-center-member .header-center-item li,
+.header-center .header-center-container .header-center-cultureplex .header-center-item li {
+    padding: 5px 0 5px 10px;
+}
+
+.header-center .header-center-container .header-center-movie .header-center-item li a,
+.header-center .header-center-container .header-center-rapcgv .header-center-item li a,
+.header-center .header-center-container .header-center-member .header-center-item li a,
+.header-center .header-center-container .header-center-cultureplex .header-center-item li a {
+    border-bottom: none;
+    padding: 0 30px 0 10px;
+    color: #fff;
+}
+
+.header-center .header-center-container .header-center-search {
+    padding-left: 50px;
+    /* padding-top: 16px; */
+    display: flex;
+}
+
+.header-center .header-center-container .header-center-search {}
+
+.header-center .header-center-container .header-center-search .header-search-left img {
+    width: 150px;
+    padding-top: 61px;
+}
+
+.header-center .header-center-container .header-center-search .header-search-right img {
+    padding-top: 25px;
+}
+
+/* ------ */
+.header-bottom {
+    height: auto;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.header-bottom .header-bottom-container {
+    width: auto;
+    padding: 0 22%;
+    text-align: center;
+}
+
+.header-bottom .header-bottom-container .header-bottom-content {
+    border-bottom: 1px solid #222;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    padding-bottom: 6px;
+    text-align: center;
+    height: 108px;
+    width: max-content;
+}
+
+.header-bottom .header-bottom-container .header-bottom-content ul {
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+    margin-left: 0px !important;
+    width: max-content;
+}
+
+.header-bottom .header-bottom-container .header-bottom-content li {
+    list-style: none;
+    border-left: 1px solid #222;
+    display: inline-block;
+    vertical-align: baseline;
+    word-break: break-all;
+}
+
+.header-bottom .header-bottom-container .header-bottom-content ul {
+    display: flex;
+}
+
+.header-bottom .header-bottom-container .header-bottom-content li:first-child {
+    border-left: medium none;
+}
+
+.header-bottom .header-bottom-container .header-bottom-content-theater,
+.header-bottom .header-bottom-container .header-bottom-content-now-sh,
+.header-bottom .header-bottom-container .header-bottom-content-special,
+.header-bottom .header-bottom-container .header-bottom-content-event,
+.header-bottom .header-bottom-container .header-bottom-content-ticket,
+.header-bottom .header-bottom-container .header-bottom-content-offer,
+.header-bottom .header-bottom-container .header-bottom-content-loginnow {
+    background-image: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-header-transparent-home.png);
+    display: block;
+    height: 90px;
+    text-indent: -9999px;
+    width: 139px;
+}
+
+.header-bottom .header-bottom-container li a.header-bottom-content-theater {
+    background-position: 10px 0;
+    touch-action: manipulation;
+}
+
+.header-bottom .header-bottom-container li a.header-bottom-content-now-sh {
+    background-position: -140px 0;
+}
+
+.header-bottom .header-bottom-container li a.header-bottom-content-special {
+    background-position: -280px 0;
+}
+
+.header-bottom .header-bottom-container li a.header-bottom-content-event {
+    background-position: -420px 0;
+}
+
+.header-bottom .header-bottom-container li a.header-bottom-content-ticket {
+    background-position: -560px 0;
+}
+
+.header-bottom .header-bottom-container li a.header-bottom-content-offer {
+    background-position: -700px 0;
+}
+
+.header-bottom .header-bottom-container li a.header-bottom-content-loginnow {
+    background-position: -830px 0;
+}
+
+
+
+/* .header-bottom .header-bottom-container .dot {
+    border: 0.5px solid #333;
+} */
+@media only screen and (min-width: 771px) {
+    .header-center {
+        width: 100%;
+        margin: 0 auto;
+        background-size: 10px 135px;
+        height: 135px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .header-center {
+        width: 100%;
+        margin: 0 auto;
+        background-size: 10px 135px;
+        height: 135px;
+    }
+}
+
+/* Giữa Trang */
+#main {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px !important;
+    height: auto;
+}
+
+@media only screen and (min-width: 480px) {
+    #main {
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 771px) {
+    .container-book {
+        width: 980px;
+        height: auto;
+    }
+
+    /*----  Book ve ở rạp  -----*/
+    .container-book-ve {
+        width: 80%;
+        height: auto;
+    }
+
+    /*----- Payment -------*/
+    .container-payment-cgv {
+        width: 80%;
+        height: auto;
+    }
+}
+
+#main .container-book {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#main .container-book .col-main {
+    float: none;
+    width: auto;
+    padding: 0;
+}
+
+.container-book .showtime .showtime-top {
+    width: 100%;
+    height: 43px;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/cinema-showtimes-favorite-top.png) no-repeat scroll center top transparent;
+}
+
+.container-book .showtime .showtime-center {
+    float: left;
+    width: 100%;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/cinema-showtimes-favorite-center.png) repeat-y scroll center top transparent;
+}
+
+.container-book .showtime .showtime-center .showtime-content {
+    float: left;
+    width: 100%;
+    padding: 17px 40px;
+}
+
+.container-book .showtime .content-cinema-top {
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid #727171;
+    border-top: 2px solid #727171;
+    padding: 6px 10px 15px;
+    color: #dbdbdb;
+    font-size: 14px;
+}
+
+.container-book .showtime .showtime-title-cinema {
+    text-align: center;
+}
+
+.showtime .showtime-center .showtime-title-cinema h1 {
+    color: #717171;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #b9b9b9;
+}
+
+.showtime-content-cinema .content-cinema-top ul li {
+    list-style-type: none;
+    float: left;
+    margin-top: 15px;
+    width: 20%;
+    color: #ffffff;
+}
+
+.showtime-content-cinema .content-cinema-top ul {
+    float: left;
+    width: 100%;
+}
+
+.showtime-content-cinema .content-cinema-list {
+    height: auto;
+    float: left;
+    width: 100%;
+}
+
+.showtime-content-cinema .content-cinema-top ul li:hover,
+.showtime-content-cinema .content-cinema-list ul li:hover {
+    color: #e71a0f;
+}
+
+.showtime-content-cinema .content-cinema-top span,
+.showtime-content-cinema .content-cinema-list span {
+    cursor: pointer;
+}
+
+.showtime-content-cinema .content-cinema-list ul li {
+    display: none;
+}
+
+
+.showtime-content-cinema .content-cinema-list ul li {
+    list-style-type: none;
+    float: left;
+    margin-top: 15px;
+    width: 25%;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.showtime-content-cinema ul li .active {
+    color: #e71a0f;
+}
+
+
+.container-book .showtime .showtime-bottom {
+    float: left;
+    width: 100%;
+    height: 43px;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/cinema-showtimes-favorite-bottom.png) no-repeat scroll center top transparent;
+}
+
+.content-cinema-list li span a {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.content-cinema-list li span a:hover {
+    color: #e71a0f;
+}
+
+/*------- Booking vé --------*/
+#main .booking-ve {
+    padding: 0 10%;
+}
+
+#main .container-book-ve {
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 2px solid #d4d3c9;
+    margin-bottom: 50px;
+}
+
+.container-book-ve .title-book-ve {
+    height: 40px;
+    background-color: #000000;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*--------- Payment ----------*/
+#main .payment {
+    padding: 0 10%;
+    height: auto;
+}
+
+#main .container-payment-cgv {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.container-payment-cgv .payment-title-cgv {
+    height: 40px;
+    background-color: #000000;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+
+/*---------- Cuối trang ---------*/
+.dot {
+    position: relative;
+    border: 1px solid #000000;
+}
+
+#footer {
+    bottom: 0;
+}
+
+.footer-1 {
+    padding: 20px 10%;
+    width: 100%;
+    display: flex;
+    line-height: 18px;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    border-top: 2px solid #222;
+}
+
+.footer-1 a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    padding-top: 5px;
+}
+
+.footer-1 b {
+    font-size: 17px;
+}
+
+.footer-1 a:hover {
+    color: blue;
+}
+
+.footer-1-left-content,
+.footer-1-follow-content,
+.footer-1-center-content,
+.footer-1-right-content {
+    padding-top: 10px;
+}
+
+.footer-1 .footer-1-right .footer-1-right-content p {
+    padding-top: 5px;
+}
+
+.footer-1-follow li {
+    font-size: 45px;
+    list-style: none;
+    padding: 3px;
+}
+
+.fa-facebook-official {
+    color: #4267b2;
+}
+
+.fa-youtube-play {
+    color: #EA4335;
+}
+
+.fa-instagram {
+    color: #E95950;
+}
+
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.footer-1-follow ul {
+    display: flex;
+}
+
+.footer-1-right-content {
+    flex-wrap: wrap;
+}
+
+.footer-1-left-content {
+    flex-direction: column;
+}
+
+.footer-2 {
+    padding: 20px 10%;
+    width: 100%;
+    display: flex;
+    line-height: 18px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.footer-2-left img,
+.footer-2-right-content {
+    padding-top: 10px;
+}
+
+.footer-2 img {
+    width: 150px;
+}
+
+.footer-3 img {
+    width: 100%;
+    height: 150px;
+}
+
+@media only screen and (min-width: 771px) {
+
+    .footer-1-left,
+    .footer-1-center,
+    .footer-1-follow,
+    .footer-1-right {
+        float: left;
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+
+    .footer-1-left,
+    .footer-1-center,
+    .footer-1-follow,
+    .footer-1-right {
+        float: left;
+        width: 33%;
+    }
+}

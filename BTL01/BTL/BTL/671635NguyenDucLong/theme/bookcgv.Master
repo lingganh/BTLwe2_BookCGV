@@ -1,0 +1,523 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="bookcgv.master.cs" Inherits="BTL._671635NguyenDucLong.theme.bookcgv" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="../../CSS/Stylecgv.css" rel="stylesheet" />
+ <link href="../../CSS/Style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+   <form id="form1" runat="server">
+         <div id="header">
+        <!-- image đầu trang -->
+        <div class="img-top">
+            <img src="https://advserver.cgv.vn/www/images/10ecf1cee3c0bc658af08456637e197a.jpg" alt="">
+        </div>
+        <div class="header-top">
+
+            <div class="item-newsoffer">
+                <a href=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>TIN MỚI & ƯU ĐÃI</a>
+            </div>
+            <div class="item-ticket">
+                <a href=""><i class="fa fa-ticket" aria-hidden="true"></i>VÉ CỦA TÔI</a>
+            </div>
+                        <div class="item-login">
+               <asp:Panel ID="pnlDangNhapDangKy" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+   </asp:ContentPlaceHolder>
+</asp:Panel>
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="header-center-container">
+
+                <div class="header-center-logo">
+                    <a href="../../671615HoangDieuLinh/theme/TrangChu.Master"><img src="https://www.cgv.vn/skin/frontend/cgv/default/images/cgvlogo.png" alt=""></a>
+                </div>
+                <nav class="nav-header">
+                    <div class="header-center-movie">
+                        <a href="" class="xxx">PHIM</a>
+                        <ul class="header-center-item">
+                            <li><a href="">Phim Đang Chiếu</a></li>
+                            <li><a href="">Phim Sắp Chiếu</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="header-center-rapcgv">
+                        <a href="">RẠP CGV</a>
+                        <ul class="header-center-item">
+                            <li><a href="../../671635NguyenDucLong/rap_cgv.aspx">Tất Cả Các Rạp</a></li>
+                            <li><a href="">Rạp Đặc Biệt</a></li>
+                            <li><a href="">Rạp 3D</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-center-member">
+                        <a href="">THÀNH VIÊN</a>
+                        <ul class="header-center-item">
+                            <li><a href="">Tài Khoản CGV</a></li>
+                            <li><a href="">Quyền Lợi</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-center-cultureplex">
+                        <a href="">CULTUREPLEX</a>
+                        <ul class="header-center-item">
+                            <li><a href="">Quầy Online</a></li>
+                            <li><a href="">Thuê Rạp & Vé Nhóm</a></li>
+                            <li><a href="">E-CGV</a></li>
+                            <li><a href="">CGV EGift</a></li>
+                            <li><a href="">CGV Rules</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header-center-search">
+                    <div class="header-search-left">
+                        <a href=""><img src="https://iguov8nhvyobj.vcdn.cloud/media/wysiwyg/2019/AUG/kenhcine.gif"
+                                alt=""></a>
+                    </div>
+                    <div class="header-search-right">
+                        <a href=""><img src="https://iguov8nhvyobj.vcdn.cloud/media/wysiwyg/news-offers/mua-ve_ngay.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="main">
+        <div class="container-book">
+            <div class="col-main">
+                <div class="showtime">
+                    <div class="showtime-container">
+                        <div class="showtime-view">
+                            <div class="showtime-top"></div>
+                            <div class="showtime-center">
+                                <div class="showtime-content">
+                                    <div class="showtime-title-cinema">
+                                        <h1>CGV CINEMAS</h1>
+                                    </div>
+                                    <div class="showtime-content-cinema">
+                                        <div class="content-cinema-top">
+                                            <ul>
+                                                <li>
+                                                    <span id="cgv-city-1" class="chon">Hồ Chí Minh</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-3" class="chon">Hà Nội</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-5" class="chon">Đà Nẵng</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-7" class="chon">Cần Thơ</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-9" class="chon">Đồng Nai</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-11" class="chon">Hải Phòng</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-13" class="chon">Quảng Ninh</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-15" class="chon">Bà Rịa-Vũng Tàu</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-17" class="chon">Bình Định</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-19" class="chon">Bình Dương</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-21" class="chon">Đắk Lắk</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-23" class="chon">Trà Vinh</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-25" class="chon">Yên Bái</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-27" class="chon">Vĩnh Long</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-29" class="chon">Kiên Giang</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-31" class="chon">Hậu Giang</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-33" class="chon">Hà Tĩnh</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-35" class="chon">Phú Yên</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-37" class="chon">Đồng Tháp</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-39" class="chon">Bạc Liêu</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-41" class="chon">Hưng Yên</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-43" class="chon">Khánh Hòa</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-45" class="chon">Kon Tum</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-47" class="chon">Lạng Sơn</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-49" class="chon">Nghệ An</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-51" class="chon">Phú Thọ</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-53" class="chon">Quảng Ngãi</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-55" class="chon">Sóc Trăng</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-57" class="chon">Sơn La</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-59" class="chon">Tây Ninh</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-61" class="chon">Thái Nguyên</span>
+                                                </li>
+                                                <li>
+                                                    <span id="cgv-city-63" class="chon">Tiền Giang</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-cinema-list">
+                                            
+                                            <ul >
+                                                <li class="cgv-city-1">
+                                                    <span class="hien"><a href="javascript:void(0);" onclick="loadCinemaPage('cgv_hung_vuong_plaza')"> CGV Hùng Vương Plaza</a></span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Crescent Mall</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Thảo Điền</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Vincom Thủ Đức</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Vivo City</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Pearl Plaza</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Liberty Citypoint</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Vincom Đồng Khởi</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Menas Mall</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Pandora City</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Aeon Tân Phú</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Vincom Gò Vấp</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Hoàng Văn Thụ</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Aeon Bình Tân</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Saigonres Nguyễn Xí</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV Sư Vạn Hạnh</span>
+                                                </li>
+                                                <li  class="cgv-city-1">
+                                                    <span class=" hien">CGV VIncom Center Landmark 81</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Vincom Center Bà Triệu</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Hồ Gươm Plaza</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Aeon Long Biên</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Vincom Nguyễn Chí Thanh</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Rice City</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Vincom Long Biên</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Vincom Bắc Từ Liêm</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Xuân Diệu</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Tràng Tiền Plaza</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Aeon Hà Đông</span>
+                                                </li>
+                                                <li  class="cgv-city-3">
+                                                    <span class="hien">CGV Vincom Times City</span>
+                                                </li>
+                                                <li  class="cgv-city-5">
+                                                    <span class="hien">CGV Vĩnh Trung Plaza</span>
+                                                </li>
+                                                <li  class="cgv-city-5">
+                                                    <span class="hien">CGV Vincom Đà Nẵng</span>
+                                                </li>
+                                                <li  class="cgv-city-7">
+                                                    <span class="hien">CGV Sense City</span>
+                                                </li>
+                                                <li  class="cgv-city-7">
+                                                    <span class="hien">CGV Vincom Xuân Khánh</span>
+                                                </li>
+                                                <li  class="cgv-city-7">
+                                                    <span class="hien">CGV Vincom Hùng Vương</span>
+                                                </li>
+                                                <li class="cgv-city-9">
+                                                    <span class="hien">CGV Coopmart Biên Hòa</span>
+                                                </li>
+                                                <li class="cgv-city-9">
+                                                    <span class="hien">CGV Big C Đồng Nai</span>
+                                                </li>
+                                                <li class="cgv-city-11">
+                                                    <span class="hien">CGV Vincom Hải Phòng</span>
+                                                </li>
+                                                <li class="cgv-city-11">
+                                                    <span class="hien">CGV Aeon Mall Hải Phòng</span>
+                                                </li>
+                                                <li  class="cgv-city-13">
+                                                    <span class="hien">CGV Vincom Hạ Long</span>
+                                                </li>
+                                                <li  class="cgv-city-13">
+                                                    <span class="hien">CGV Vincom Móng Cái</span>
+                                                </li>
+                                                <li  class="cgv-city-13">
+                                                    <span class="hien">CGV Vincom Cẩm Phả</span>
+                                                </li>
+                                                <li  class="cgv-city-15">
+                                                    <span class="hien">CGV Lam Sơn Square</span>
+                                                </li>
+                                                <li  class="cgv-city-15">
+                                                    <span class="hien">CGV Lapen Center Vũng Tàu</span>
+                                                </li>
+                                                <li  class="cgv-city-17 ">
+                                                    <span class="hien">CGV Kim Cúc Plaza</span>
+                                                </li>
+                                                <li  class="cgv-city-19">
+                                                    <span class="cgv-city-19 hien">CGV Bình Dương Square</span>
+                                                </li>
+                                                <li  class="cgv-city-21 ">
+                                                    <span class="cgv-city-21 hien">CGV Buôn Mê Thuột</span>
+                                                </li>
+                                                <li  class="cgv-city-23 ">
+                                                    <span class="cgv-city-23 hien">CGV Vincom Trà Vinh</span>
+                                                </li>
+                                                <li  class="cgv-city-25">
+                                                    <span class=" hien">CGV Vincom Yên Bái</span>
+                                                </li>
+                                                <li  class="cgv-city-27">
+                                                    <span class=" hien">CGV Vincom Vĩnh Long</span>
+                                                </li>
+                                                <li  class="cgv-city-29">
+                                                    <span class=" hien">CGV Vincom Rạch Giá</span>
+                                                </li>
+                                                <li  class="cgv-city-31">
+                                                    <span class=" hien">CGV Vincom Vi Thanh</span>
+                                                </li>
+                                                <li  class="cgv-city-33 ">
+                                                    <span class="hien">CGV Vincom Hà Tĩnh</span>
+                                                </li>
+                                                <li  class="cgv-city-35">
+                                                    <span class=" hien">CGV Vincom Phú Yên</span>
+                                                </li>
+                                                <li  class="ccgv-city-37 ">
+                                                    <span class="hien">CGV Vincom Cao Lãnh</span>
+                                                </li>
+                                                <li  class="cgv-city-39">
+                                                    <span class=" hien">CGV Vincom Bạc Liêu</span>
+                                                </li>
+                                                <li  class="cgv-city-41 ">
+                                                    <span class="hien">CGV Vincom Ecopark Hưng Yên</span>
+                                                </li>
+                                                <li  class="gv-city-43 ">
+                                                    <span class="chien">CGV Big C Nha Trang</span>
+                                                </li>
+                                                <li  class="cgv-city-45">
+                                                    <span class=" hien">CGV Vincom Kon Tum</span>
+                                                </li>
+                                                <li  class="cgv-city-47">
+                                                    <span class=" hien">CGV Vincom Lạng Sơn</span>
+                                                </li>
+                                                <li  class="cgv-city-49">
+                                                    <span class=" hien">CGV Vinh Centre</span>
+                                                </li>
+                                                <li  class="cgv-city-51">
+                                                    <span class=" hien">CGV Happyland Việt Trì</span>
+                                                </li>
+                                                <li  class="cgv-city-53">
+                                                    <span class=" hien">CGV Vincom Quảng Ngãi</span>
+                                                </li>
+                                                <li  class="cgv-city-55">
+                                                    <span class=" hien">CGV Vincom Sóc Trăng</span>
+                                                </li>
+                                                <li  class="cgv-city-57">
+                                                    <span class=" hien">CGV Vincom Sơn La</span>
+                                                </li>
+                                                <li  class="cgv-city-59">
+                                                    <span class=" hien">CGV Vincom Tây Ninh</span>
+                                                </li>
+                                                <li  class="cgv-city-61">
+                                                    <span class=" hien">CGV Vincom Thái Nguyên</span>
+                                                </li>
+                                                <li  class="cgv-city-63">
+                                                    <span class=" hien">CGV GO! Mỹ Tho</span>
+                                                </li>
+                                                <li  class="cgv-city-63">
+                                                    <span class=" hien">CGV Vincom Mỹ Tho</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="showtime-bottom">
+                            </div>
+                        </div>
+                        <!-- Dưới phần chọn tỉnh -->
+                        <div class="showtime-theater">
+                            <div class="thearter-header">
+                                <div class="header-home-title">
+                                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- showtime-container -->
+                    </div>
+                </div>
+                <!-- Col-main -->
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+
+        <div class="footer-1">
+
+            <div class="footer-1-left">
+                <b>CGV Việt Nam</b>
+                <div class="footer-1-left-content">
+                    <a href="">Giới thiệu</a>
+                    <a href="">Tiện Ích Online</a>
+                    <a href="">Thẻ Quà Tặng</a>
+                    <a href="">Tuyển Dụng</a>
+                    <a href="">Liên Hệ Quảng Cáo CGV</a>
+                    <a href="">Dành Cho Đối Tác</a>
+                </div>
+            </div>
+            <div class="footer-1-center">
+                <b>Điều khoản sử dụng</b>
+                <div class="footer-1-center-content">
+                    <a href="">Điều Khoản Chung</a>
+                    <a href="">Điều Khoản Giao Dịch</a>
+                    <a href="">Chính Sách Thanh Toán</a>
+                    <a href="">Chính Sách Bảo Mật</a>
+                    <a href="">Câu Hỏi Thường Gặp</a>
+                </div>
+            </div>
+            <div class="footer-1-follow">
+                <b>Kết nối với chúng tôi</b>
+                <ul>
+                    <li>
+                        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <a href="http://online.gov.vn/Home/WebDetails/4549" target="_blank" class="ft-img1">
+                    <img src="https://shopfront-cdn.tekoapis.com/common/da-dang-ky.png" alt="logo xác nhận"
+                        class="ft-img2">
+                </a>
+            </div>
+            <div class="footer-1-right">
+                <b>Chăm sóc khách hàng</b>
+                <div class="footer-1-right-content">
+                    <p>Hotline: 1900 6017</p>
+                    <p>Giờ làm việc: 8:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ Tết)</p>
+                    <p>Email hỗ trợ: hoidap@cgv.vn</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="dot"></div>
+        <div class="footer-2">
+            <div class="footer2-left">
+                <a href=""><img
+                        src="https://img.newsroom.cj.net/wp-content/uploads/2022/07/CI_logo_press_20220328_cgv_W.jpg"
+                        alt="logo cj-cgv"></a>
+            </div>
+            <div class="footer-2-right">
+                <b>CÔNG TY TNHH CJ CGV VỆT NAM</b>
+                <div class="footer-2-right-content">
+                    <p>Giấy chứng nhận đăng ký doanh nghiệp: 0303675393 đăng ký lần đầu ngày 31/07/2008, được cấp bởi Sở
+                        kế hoạch và Đầu tư Thành Phố Hồ Chí Minh</p>
+                    <p>Địa chỉ: Lầu 2, số 7/28, Đường Thành Thái, Phường 14, Quận 10, Thành phố Hồ Chí Minh, Việt Nam
+                    </p>
+                    <p>Đường dây nóng (Hotline): 1900 6017</p>
+                    <p>COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD. ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-3">
+            <img src="https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-bottom-footer.jpg" alt="">
+        </div>
+    </div>
+        <script src="../Scripts/script.js"></script>
+  </form>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf7e3;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs {
+    margin-bottom: 20px;
+    background-color: #f5f2f2;
+}
+
+    .breadcrumbs ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+        .breadcrumbs ul li {
+            margin-right: 10px;
+        }
+
+            .breadcrumbs ul li a {
+                text-decoration: none;
+                color: #e50914;
+                font-weight: bold;
+            }
+
+            .breadcrumbs ul li span {
+                color: #ccc;
+                margin: 0 10px;
+                font-size: 18px;
+            }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fdf7e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.offer-detail h2 {
+    color: #e50914;
+    margin-bottom: 20px;
+}
+
+.offer-detail p {
+    margin: 10px 0;
+}
+/* Media Queries để điều chỉnh bố cục khi thu nhỏ */
+@media (max-width: 768px) {
+    .col1, .col2 {
+        flex: 100%; /* Khi chiều rộng nhỏ hơn 768px, các cột chiếm 100% */
+        margin: 5px 0; /* Giảm khoảng cách */
+    }
+}

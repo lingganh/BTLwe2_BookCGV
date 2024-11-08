@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="payment.master.cs" Inherits="BTL._671635NguyenDucLong.theme.payment" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../../CSS/Stylecgv.css" rel="stylesheet" />
+    <link href="../../CSS/Style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body >
+       <form id="form1" runat="server">
+         <div id="header">
+        <!-- image đầu trang -->
+        <div class="img-top">
+            <img src="https://advserver.cgv.vn/www/images/10ecf1cee3c0bc658af08456637e197a.jpg" alt="">
+        </div>
+        <div class="header-top">
+
+            <div class="item-newsoffer">
+                <a href=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>TIN MỚI & ƯU ĐÃI</a>
+            </div>
+            <div class="item-ticket">
+                <a href=""><i class="fa fa-ticket" aria-hidden="true"></i>VÉ CỦA TÔI</a>
+            </div>
+            <div class="item-login">
+   <asp:Panel ID="pnlDangNhapDangKy" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+ </asp:ContentPlaceHolder>
+</asp:Panel>
+</div>
+        </div>
+        <div class="header-center">
+            <div class="header-center-container">
+
+                <div class="header-center-logo">
+                    <a href="../../671615HoangDieuLinh/theme/TrangChu.Master"><img src="https://www.cgv.vn/skin/frontend/cgv/default/images/cgvlogo.png" alt=""></a>
+                </div>
+                <nav class="nav-header">
+                    <div class="header-center-movie">
+                        <a href="" class="xxx">PHIM</a>
+                        <ul class="header-center-item">
+                            <li><a href="">Phim Đang Chiếu</a></li>
+                            <li><a href="">Phim Sắp Chiếu</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="header-center-rapcgv">
+                        <a href="">RẠP CGV</a>
+                        <ul class="header-center-item">
+                            <li><a href="../../671635NguyenDucLong/rap_cgv.aspx">Tất Cả Các Rạp</a></li>
+                            <li><a href="">Rạp Đặc Biệt</a></li>
+                            <li><a href="">Rạp 3D</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-center-member">
+                        <a href="">THÀNH VIÊN</a>
+                        <ul class="header-center-item">
+                            <li><a href="">Tài Khoản CGV</a></li>
+                            <li><a href="">Quyền Lợi</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-center-cultureplex">
+                        <a href="">CULTUREPLEX</a>
+                        <ul class="header-center-item">
+                            <li><a href="">Quầy Online</a></li>
+                            <li><a href="">Thuê Rạp & Vé Nhóm</a></li>
+                            <li><a href="">E-CGV</a></li>
+                            <li><a href="">CGV EGift</a></li>
+                            <li><a href="">CGV Rules</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header-center-search">
+                    <div class="header-search-left">
+                        <a href=""><img src="https://iguov8nhvyobj.vcdn.cloud/media/wysiwyg/2019/AUG/kenhcine.gif"
+                                alt=""></a>
+                    </div>
+                    <div class="header-search-right">
+                        <a href=""><img src="https://iguov8nhvyobj.vcdn.cloud/media/wysiwyg/news-offers/mua-ve_ngay.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+     <div id="main">
+        <div class="payment">
+        <div class="container-payment-cgv">
+            <div class="payment-title-cgv">
+                <b>THANH TOÁN</b>
+            </div>
+            <div class="payment-content-cgv">
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+            
+    </div>
+        </div>
+</div>
+
+    <div id="footer">
+
+        <div class="footer-1">
+
+            <div class="footer-1-left">
+                <b>CGV Việt Nam</b>
+                <div class="footer-1-left-content">
+                    <a href="">Giới thiệu</a>
+                    <a href="">Tiện Ích Online</a>
+                    <a href="">Thẻ Quà Tặng</a>
+                    <a href="">Tuyển Dụng</a>
+                    <a href="">Liên Hệ Quảng Cáo CGV</a>
+                    <a href="">Dành Cho Đối Tác</a>
+                </div>
+            </div>
+            <div class="footer-1-center">
+                <b>Điều khoản sử dụng</b>
+                <div class="footer-1-center-content">
+                    <a href="">Điều Khoản Chung</a>
+                    <a href="">Điều Khoản Giao Dịch</a>
+                    <a href="">Chính Sách Thanh Toán</a>
+                    <a href="">Chính Sách Bảo Mật</a>
+                    <a href="">Câu Hỏi Thường Gặp</a>
+                </div>
+            </div>
+            <div class="footer-1-follow">
+                <b>Kết nối với chúng tôi</b>
+                <ul>
+                    <li>
+                        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <a href="http://online.gov.vn/Home/WebDetails/4549" target="_blank" class="ft-img1">
+                    <img src="https://shopfront-cdn.tekoapis.com/common/da-dang-ky.png" alt="logo xác nhận"
+                        class="ft-img2">
+                </a>
+            </div>
+            <div class="footer-1-right">
+                <b>Chăm sóc khách hàng</b>
+                <div class="footer-1-right-content">
+                    <p>Hotline: 1900 6017</p>
+                    <p>Giờ làm việc: 8:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ Tết)</p>
+                    <p>Email hỗ trợ: hoidap@cgv.vn</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="dot"></div>
+        <div class="footer-2">
+            <div class="footer2-left">
+                <a href=""><img
+                        src="https://img.newsroom.cj.net/wp-content/uploads/2022/07/CI_logo_press_20220328_cgv_W.jpg"
+                        alt="logo cj-cgv"></a>
+            </div>
+            <div class="footer-2-right">
+                <b>CÔNG TY TNHH CJ CGV VỆT NAM</b>
+                <div class="footer-2-right-content">
+                    <p>Giấy chứng nhận đăng ký doanh nghiệp: 0303675393 đăng ký lần đầu ngày 31/07/2008, được cấp bởi Sở
+                        kế hoạch và Đầu tư Thành Phố Hồ Chí Minh</p>
+                    <p>Địa chỉ: Lầu 2, số 7/28, Đường Thành Thái, Phường 14, Quận 10, Thành phố Hồ Chí Minh, Việt Nam
+                    </p>
+                    <p>Đường dây nóng (Hotline): 1900 6017</p>
+                    <p>COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD. ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-3">
+            <img src="https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-bottom-footer.jpg" alt="">
+        </div>
+    </div>
+        <script src="../Scripts/script.js"></script>
+           </form>
+</body>
+</html>

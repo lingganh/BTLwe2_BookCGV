@@ -1,0 +1,89 @@
+﻿
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+    .movie-card:hover {
+        transform: scale(1.05);
+    }
+
+.movie-poster {
+    width: 326px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.movie-title {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.movie-genre,
+.movie-duration,
+.movie-release {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-ticket {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #d32020;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-view:hover {
+    background-color: #0d1aa6;
+    color: white;
+}
+
+.btn-ticket:hover {
+    background-color: #7a0a0a;
+    color: white;
+}

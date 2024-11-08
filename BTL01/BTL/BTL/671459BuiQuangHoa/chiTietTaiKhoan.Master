@@ -1,0 +1,228 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="chiTietTaiKhoan.master.cs" Inherits="BTL._671459BuiQuangHoa.chiTietTaiKhoan" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Chi tiết tài khoản</title>
+    <link href="themes/StyleCttk.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+    <img src="https://w7.pngwing.com/pngs/727/888/png-transparent-cgv-thumbnail-cinema-logos.png" alt="CGV Logo">
+    </header>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <nav>
+    <a href="#">Phim</a>
+    <a href="#">Rạp CGV</a>
+    <a href="#">Thành Viên</a>
+    <a href="#">Cultureplex</a>
+    </nav>
+    <div class="container">
+        <h2>Tài Khoản CGV</h2>
+        <div class="profile-section">
+            <div>
+                <h3>Thông Tin Chung</h3>
+                <p>Xin chào Quang Hòa,</p>
+                <p>Mọi thông tin của bạn sẽ được hiển thị ở đây</p>
+            </div>
+            <img src="https://cdn.vinaenter.edu.vn/wp-content/uploads/2024/07/avatar-doremon-1.jpg" alt="Profile Image">
+        </div>
+        <div class="menu-section">
+            <div class="menu-section-left">
+                <button><a href="WebForm1.aspx" style="text-decoration: none; color:black;">Thông tin chung </a></button>
+                <button><a href="WebForm2.aspx" style="text-decoration: none; color:black;">Chi Tiết Tài Khoản</a></button>
+                <button><a href="WebForm3.aspx" style="text-decoration: none; color:black;">Setup a Pin</a></button>
+                <button><a href="WebForm4.aspx" style="text-decoration: none; color:black;">Thẻ Thành Viên</a></button>
+                <button><a href="WebForm6.aspx" style="text-decoration: none; color:black;">Điểm Thưởng</a></button>
+                <button><a href="WebForm5.aspx" style="text-decoration: none; color:black;">Thẻ Quà Tặng</a></button>
+                <button><a href="WebForm7.aspx" style="text-decoration: none; color:black;">Voucher</a></button>
+            </div>
+            <div class="menu-section-right">
+                <!-- Phần lời chào -->
+                <div class="containert">
+    <h2>THAY ĐỔI THÔNG TIN</h2>
+    <form action="#">
+        <div class="form-group">
+            <label for="name">Tên <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required>
+
+        </div>
+
+        <div class="form-group">
+            <label for="city">Thành phố/Tỉnh <span class="required">*</span></label>
+            <select id="city" name="city" required>
+                <option value="hanoi">Hà Nội</option>
+                <option value="thaibinh">Thái Bình</option>
+                <option value="namdinh">Nam Định</option>
+                <option value="hochiminh">TP.Hồ Chí Minh</option>
+                <option value="danang">Đà Nẵng</option>
+                <option value="khanhhoa">Khánh Hòa</option>
+                <option value="hue">Huế</option>
+                <option value="longan">Long An</option>
+                <option value="binhduong">Bình Dương</option>
+                <option value="binhdinh">Bình Định</option>
+                <option value="hoabinh">Hòa Bình</option>
+                <option value="camau">Cà Mau</option>
+                <option value="quangninh">Quảng Ninh</option>
+                <option value="quangngai">Quảng Ngãi</option>
+                <option value="nghean">Nghệ An</option>
+                <option value="hungyen">Hưng Yên</option>
+                <option value="bacgiang">Bắc Giang</option>
+                <option value="quangtri">Quảng Trị</option>
+                
+                <!-- Add other cities as options here -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Điện thoại <span class="required">*</span></label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label>Giới tính <span class="required">*</span></label>
+            <input type="radio" name="gender" value="Nam" required> Nam
+            <input type="radio" name="gender" value="Nữ"> Nữ
+            <input type="radio" name="gender" value="None"> None
+        </div>
+
+        <div class="form-group">
+            <label for="birthday">Ngày sinh</label>
+            <input type="date" id="birthday" name="birthday">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Địa chỉ email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="district">Quận <span class="required">*</span></label>
+            <select id="district" name="district" required>
+                <option value="gialam">Huyện Gia Lâm</option>
+                <option value="badinh">Quận Ba Đình</option>
+                <option value="hoankiem">Quận Hoàn Kiếm</option>
+                <option value="tayho">Quận Tây Hồ</option>
+                <option value="longbien">Quận Long Biên</option>
+                <option value="caugiay">Quận Cầu Giấy</option>
+                <option value="dongda">Quận Đống Đa</option>
+                <option value="haibatrung">Quận Hai Bà Trưng</option>
+                <option value="hoangmai">Quận Hoàng Mai</option>
+                <option value="thanhxuan">Quận Thanh Xuân</option>
+                <option value="hadong">Quận Hà Đông</option>
+                <option value="bactuliem">Quận Bắc Từ Liêm</option>
+                <option value="namtuliem">Quận Nam Từ Liêm</option>
+                <option value="chuongmy">Huyện Chương Mỹ</option>
+                <option value="danphuong">Huyện Đan Phượng</option>
+                <option value="donganh">Huyện Đông Anh</option>
+                <option value="hoaiduc">Huyện Hoài Đức</option>
+                <!-- Add other districts as options here -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Địa chỉ <span class="required">*</span></label>
+            <input type="text" id="address" name="address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="old-password">Mật khẩu cũ <span class="required">*</span></label>
+            <input type="password" id="old-password" name="old-password" required>
+        </div>
+
+        <div class="form-group optional-info">
+            <label>Số thẻ thành viên</label>
+            <p>9992-4835-1129-0192</p>
+        </div>
+
+        <div class="form-group">
+            <label for="theater">Rạp yêu thích</label>
+            <select id="theater" name="theater">
+                <option value="cgv-aeon">CGV Aeon Long Biên</option>
+                <!-- Add other theaters as options here -->
+            </select>
+        </div>
+
+        <div class="submit-button">
+            <button type="submit">LƯU LẠI</button>
+        </div>
+    </form>
+</div>
+              </div>
+    </div>
+
+
+
+
+     <footer class="footer">
+        <div class="footer-container">
+            <!-- Cột CGV Việt Nam -->
+            <div class="footer-column">
+                <h4>CGV Việt Nam</h4>
+                <ul>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Tiện Ích Online</a></li>
+                    <li><a href="#">Thẻ Quà Tặng</a></li>
+                    <li><a href="#">Tuyển Dụng</a></li>
+                    <li><a href="#">Liên Hệ Quảng Cáo CGV</a></li>
+                    <li><a href="#">Dành cho đối tác</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột Điều khoản sử dụng -->
+            <div class="footer-column">
+                <h4>Điều khoản sử dụng</h4>
+                <ul>
+                    <li><a href="#">Điều Khoản Chung</a></li>
+                    <li><a href="#">Điều Khoản Giao Dịch</a></li>
+                    <li><a href="#">Chính Sách Thanh Toán</a></li>
+                    <li><a href="#">Chính Sách Bảo Mật</a></li>
+                    <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                </ul>
+            </div>
+            
+            <!-- Cột Kết nối với chúng tôi -->
+            <div class="footer-column">
+                <h4>Kết nối với chúng tôi</h4>
+                <div class="social-icons">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+                        <li><i class="fa-brands fa-youtube"></i>Youtube</li>
+                        <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+                        <li><i class="fa-brands fa-tiktok"></i>Tiktok</li>
+                    </ul>
+                </div>
+                    <img src="http://online.gov.vn/Content/EndUser/LogoCCDVSaleNoti/logoSaleNoti.png" alt="Bộ Công Thương">
+            </div>
+
+            <!-- Cột Chăm sóc khách hàng -->
+            <div class="footer-column">
+                <h4>Chăm sóc khách hàng</h4>
+                <p>Hotline: 1900 6017</p>
+                <p>Giờ làm việc: 8:00 - 22:00 (Tất cả các ngày bao gồm cả Lễ Tết)</p>
+                <p>Email hỗ trợ: hoidap@cgv.vn</p>
+            </div>
+        </div>
+
+        <!-- Phần thông tin pháp lý -->
+        <div class="footer-bottom">
+            <img src="https://via.placeholder.com/80" alt="CGV Logo" class="company-logo">
+            <p>CÔNG TY TNHH CJ CGV VIỆT NAM</p>
+            <p>Giấy Chứng nhận đăng ký doanh nghiệp: 0303675393 đăng ký lần đầu ngày 31/7/2008, được cấp bởi Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh</p>
+            <p>Địa chỉ: Lầu 2, số 7/28, Đường Thành Thái, Phường 14, Quận 10, Thành phố Hồ Chí Minh, Việt Nam</p>
+            <p>Đường dây nóng (Hotline): 1900 6017</p>
+            <p>COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+    <script src="JavaScript.js"></script>
+</body>
+</html>

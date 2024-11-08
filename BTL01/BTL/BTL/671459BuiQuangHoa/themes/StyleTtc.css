@@ -1,0 +1,231 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf6e3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid #ff6666;
+}
+
+    header img {
+        max-width: 150px;
+    }
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+    nav a {
+        padding: 10px 20px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid #ff6666;
+        border-radius: 4px;
+        margin: 0 5px;
+    }
+
+        nav a:hover {
+            background-color: #ff6666;
+            color: white;
+        }
+
+.container {
+    max-width: 1000px;
+    padding: 20px auto 20px auto;
+    margin: 20px auto 20px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+    .profile-section img {
+        max-width: 100px;
+        border-radius: 50%;
+    }
+
+.menu-section {
+    background-color: white;
+    height: 500px;
+}
+
+.menu-section-left {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    float: left;
+}
+
+    .menu-section-left button {
+        padding: 10px;
+        margin-bottom: 5px;
+        background-color: #ddd;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+        .menu-section-left button:hover {
+            background-color: #ff6666;
+        }
+
+.menu-section-right {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    float: right;
+    height: 500px;
+}
+
+.info-text {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.info-table {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #f3f3f3;
+    padding: 15px 15px 70px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.info-item {
+    text-align: center;
+    width: 18%;
+}
+
+    .info-item img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .info-item p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .info-item button {
+        padding: 5px 10px;
+        background-color: #1a75ff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+.box span {
+    float: left;
+    width: 100%;
+    display: inline;
+    margin-bottom: 7px;
+}
+
+}
+
+.footer {
+    width: 100%;
+    background-color: #f9f7ed;
+    color: #333;
+    padding: 20px 0;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Phần nội dung trong footer */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Cột trong footer */
+.footer-column {
+    width: 22%;
+    padding: 10px;
+}
+
+    /* Tiêu đề cột */
+    .footer-column h4 {
+        font-size: 16px;
+        color: #666;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* Liên kết trong footer */
+    .footer-column ul {
+        list-style: none;
+    }
+
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+
+            .footer-column ul li a {
+                color: #333;
+                text-decoration: none;
+            }
+
+                .footer-column ul li a:hover {
+                    text-decoration: underline;
+                }
+
+/* Biểu tượng mạng xã hội */
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/* Phần thông tin pháp lý */
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Logo công ty */
+.company-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Điều chỉnh trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

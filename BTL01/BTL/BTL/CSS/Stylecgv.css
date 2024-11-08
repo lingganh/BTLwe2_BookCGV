@@ -1,0 +1,652 @@
+﻿/*----------  Booking ve -----------*/
+
+.btn-left a,
+.btn-right a {
+    text-decoration: none;
+}
+
+.auto-style7 {
+    width: 950px;
+    height: 300px;
+}
+
+.auto-style8 {
+    width: 588px;
+    height: 28px;
+    border-top: 1px solid #333;
+}
+
+.auto-style9 {
+    width: 189px;
+    height: 17px;
+}
+
+.auto-style10 {
+    width: 186px;
+    height: 260px;
+    padding-bottom: 15px;
+    border-right: 1px solid #333;
+}
+
+.auto-style11 {
+    width: 186px;
+}
+
+.auto-style7 tr img {
+    height: 260px;
+    width: 190px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.time_cgv {
+    vertical-align: top;
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.time_cgv a {
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.time_cgv a:hover {
+    border: 2px solid #000;
+}
+
+.name_cgv {
+    padding-top: 10px;
+    border-top: 1px solid #333;
+    padding-bottom: 10px;
+    border-right: 1px solid #333;
+}
+
+.name_cgv a {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* Dươi Phần chọn tỉnh */
+.showtime-theater {
+    position: relative;
+}
+
+.showtime-theater .thearter-header .header-home-title {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.showtime-theater .header-home-title h3 {
+    background: url(https://cgv.vn/skin/frontend/cgv/default/images/h3_theater.gif) no-repeat scroll center center / 204px 41px transparent;
+    display: inline-block;
+    width: 220px;
+    margin-top: 10px;
+    height: 41px;
+    text-indent: -99999px;
+    text-align: center;
+}
+
+.showtime-theater .center-home-title {
+    border-top: 1px solid #333;
+    margin: 5px 0;
+    color: #828282;
+    text-align: center;
+}
+
+.showtime-theater .diachi-home-title .img-home-title img {
+    width: 100%;
+}
+
+.showtime-theater .diachi-home-title .img-home-title {
+    text-align: center;
+}
+
+.showtime-theater .content-diachi-home {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin-top: -90px;
+    margin-bottom: 50px;
+}
+
+.content-diachi-home .diachi-home-title {
+    width: 70%;
+    padding-top: 15px;
+}
+
+.content-diachi-home .diachi-home-title p {
+    float: left;
+}
+
+.content-diachi-home .diachi-home-bando {
+    font-weight: 600;
+}
+
+.content-diachi-home .diachi-home-bando a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content-diachi-home .diachi-home-bando .xem-bando-home,
+.content-diachi-home .diachi-home-bando .lien-he-cgv {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.content-diachi-home .diachi-home-bando p {
+    margin-top: 5px;
+}
+
+/*-----------Book ve-------*/
+
+.time_book_ve {
+    width: 100%;
+    padding: 15px;
+    border-bottom: 2px solid #d4d3c9;
+    background: #fff1ce;
+}
+
+.ghe_cgv {
+    text-align: center;
+}
+
+.lua_chon_ghe {
+    height: 300px;
+}
+
+.vitri_ghe_cgv {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.vitri_ghe_cgv .seat {
+    margin: 5px;
+}
+
+.lua_chon_ghe .vitri_ghe_cgv .seat a {
+    text-decoration: none;
+    border: 1px solid #00ff21;
+    width: 35px;
+    height: 25px;
+    padding: 2px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected {
+    background-color: #b11500;
+    border: 2px solid #b11500 !important;
+    /* Màu sắc của ghế đã chọn */
+}
+
+.header_content {
+    height: 30px;
+    background-color: #bcbdc0;
+    font-weight: 550;
+    padding: 5px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.screen_cgv {
+    width: 100%;
+    height: 45px;
+    margin: 20px auto 40px;
+    text-align: center;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-screen.png) no-repeat top center transparent;
+    background-size: 100% auto;
+}
+
+.checked_notice {
+    height: 20px;
+    width: 20px;
+    background-color: #b11500;
+    margin-right: 5px;
+}
+
+.norman_notice {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #00ff21;
+    margin-right: 5px;
+}
+
+.vip_notice {
+    height: 20px;
+    width: 20px;
+    border: 1px solid red;
+    margin-right: 5px;
+}
+
+.dachon_notice {
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    margin-right: 5px;
+}
+
+.notice_dangchon,
+.notice_chuachon,
+.notice_vip,
+.notice_dachon {
+    width: 120px;
+    height: 25px;
+    padding-top: 3px;
+    padding-right: 5px;
+    display: flex;
+    text-align: center;
+}
+
+.notice_ghe_cgv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 25%;
+    padding-bottom: 10px;
+}
+
+.bottom_content {
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+}
+
+.bottom-book-ve {
+    background-color: #000;
+    margin-top: 20px;
+}
+
+.format-bg-top-book {
+    width: 100%;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-top-seatmap.png) repeat-x top left transparent;
+    height: 8px;
+    overflow: hidden;
+}
+
+.format-bg-bottom-book {
+    width: 100%;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-bottom-seatmap.png) repeat-x bottom left transparent;
+    height: 8px;
+    overflow: hidden;
+}
+
+.btn_left,
+.btn_right {
+    float: none;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+    background: url(https://cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-cgv-button-process.png) no-repeat;
+}
+
+.btn_left {
+    background-position: -152px 0;
+    margin-left: 15px;
+    width: 143px;
+    height: 108px;
+}
+
+.btn_right {
+    background-position: -152px -441px;
+    margin-right: 15px;
+    width: 143px;
+    height: 108px;
+}
+
+/*----Phan hien thi thoi gian va thong tin phim-----*/
+.thongtin_movie_cgv {
+    width: 80%;
+}
+
+.thongtin_movie_cgv ul {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+}
+
+.item_book_left {
+    display: flex;
+    margin: 5px;
+}
+
+.thongtin_movie_cgv li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.thongtin_movie_cgv img {
+    height: 108px;
+    width: 74px;
+}
+
+.item_book_right .item_book_money,
+.item_book_right .item_book_combo,
+.item_book_right .item_sum_money {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.item_book_right .item_book_money #totalAmount,
+.item_book_right .item_book_combo #totalCombo,
+.item_book_right .item_sum_money #totalSumMoney {
+    padding-right: 10px;
+}
+
+.space {
+    width: 7px;
+}
+
+.bottom_content .thongtin_movie_cgv .item_book_right {
+    width: 230px;
+}
+
+.thongtin_movie_cgv .item_book_center {
+    flex-direction: column;
+    font-weight: 500;
+}
+
+/*------- book them do an -----*/
+
+#page_book_add {
+    height: auto;
+}
+
+.item_combo li {
+    list-style-type: none;
+}
+
+.item_combo .item_combo_1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item_combo_1 .item_mycombo {
+    display: flex;
+}
+
+.item_combo_1 .product_img {
+    float: left;
+    width: 33.33333%;
+}
+
+.item_mycombo .content_mycombo {
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.item_mycombo .content_mycombo p {
+    margin-top: 15px;
+}
+
+.item_mycombo .item_number_combo {
+    padding-top: 5px;
+    display: flex;
+}
+
+.item_mycombo button {
+    padding: 4px;
+    color: #fff;
+    background-color: red;
+    text-align: center;
+    font-size: 18px;
+}
+
+.item_number_combo .number_combo {
+    width: 33px;
+    padding-top: 5px;
+    text-align: center;
+    border: 2px solid #bcbdc0;
+    margin: 0 10px;
+}
+
+
+/*------  Thanh Toán -----------*/
+.payment-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.payment-content-left {
+    width: 69%;
+}
+
+.payment-content-left li,
+.payment-content-right li {
+    list-style-type: none;
+    padding-top: 15px;
+}
+
+.payment-content-left .payment_thongtin_vocher li {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff1ce;
+    border-radius: 5px;
+}
+
+.payment-content-left .payment_step .payment_vocher,
+.payment-content-left .payment_step .payment_giftcode,
+.payment-content-left .payment_step .payment_thanhtoan {
+    background: #bcbdc0;
+    border: 2px solid #9d9fa2;
+}
+
+.payment-content-left .payment_step .payment_vocher p,
+.payment-content-left .payment_step .payment_giftcode p,
+.payment-content-left .payment_step .payment_thanhtoan p {
+    padding: 10px;
+}
+
+.payment_vocher-left {
+    font-weight: 600;
+    padding-top: 3px;
+}
+
+.payment_step .thanhtoan_tructuyen li {
+    display: flex;
+}
+
+.thanhtoan_tructuyen span {
+    padding-top: 10px;
+    margin-left: 5px;
+}
+
+.thanhtoan_tructuyen p {
+    padding-top: 10px;
+}
+
+.payment_step ul li img {
+    width: 37px;
+    height: 37px;
+    margin: 0 10px;
+}
+
+.payment_step {
+    width: 100%;
+}
+
+.payment_step .thanhtoan_tructuyen {
+    background: #fff1ce;
+    margin: 10px 0;
+}
+
+.payment_step .payment_gift_card {
+    margin: 5px 0;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 14px;
+    background: #fff1ce;
+    border-radius: 5px;
+}
+
+.payment-content-right {
+    width: 29%;
+    margin-left: 20px;
+}
+
+.thongtin_pay_online li {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+    background: #fff1ce;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #8f8f8f;
+}
+
+.title_sum_money,
+.ticket_payment,
+.combo_payment,
+.khuyenmai_payment,
+.sum_money_pay {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.khuyenmai_payment,
+.title_sum_money,
+.sum_money_pay,
+.pay_sum,
+.khuyenmai_check,
+.summoney_payment {
+    font-weight: 660;
+}
+
+.thongtin_pay_online .ticket_payment,
+.thongtin_pay_online .combo_payment {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 5px;
+}
+
+.thongtin_pay_online .summoney_payment,
+.thongtin_pay_online .khuyenmai_check,
+.thongtin_pay_online .pay_sum {
+    background-color: #d4d3c9;
+}
+
+.thongtin_pay_online li div {
+    height: 25px;
+}
+
+/*------- bottom thanh toán ----------*/
+.payment_bottom_content {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+}
+
+.bottom-content-pay {
+    background-color: #000;
+    margin-top: 20px;
+}
+
+.format_bg_top-pay {
+    width: 100%;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-top-seatmap.png) repeat-x top left transparent;
+    height: 8px;
+    overflow: hidden;
+}
+
+.format_bg_bottom-pay {
+    width: 100%;
+    background: url(https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-bottom-seatmap.png) repeat-x bottom left transparent;
+    height: 8px;
+    overflow: hidden;
+}
+
+.payment_btn_left,
+.payment_btn_right {
+    float: none;
+    display: inline-block;
+    margin-top: 13px;
+    vertical-align: top;
+    background: url(https://cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-cgv-button-process.png) no-repeat;
+}
+
+.payment_btn_left {
+    background-position: -152px -3px;
+    margin-left: 25px;
+    width: 143px;
+    height: 108px;
+}
+
+.payment_btn_right {
+    background-position: -134px -110px;
+    margin-right: 15px;
+    width: 143px;
+    height: 108px;
+}
+
+.thongtin_movie_payment {
+    width: 80%;
+}
+
+.thongtin_movie_payment ul {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+}
+
+.item_payment_left {
+    display: flex;
+    margin: 5px;
+}
+
+.thongtin_movie_payment li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.thongtin_movie_payment img {
+    height: 108px;
+    width: 74px;
+}
+
+.item_payment_right .item_payment_money,
+.item_payment_right .item_payment_combo,
+.item_payment_right .item_sum_money_payment {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.item_payment_right .item_payment_money #totalAmount,
+.item_payment_right .item_payment_combo #totalCombo,
+.item_payment_right .item_sum_money_payment #totalSumMoney {
+    padding-right: 10px;
+}
+
+.space {
+    width: 7px;
+}
+
+.payment_bottom_content .thongtin_movie_payment .item_payment_right {
+    width: 230px;
+}
+
+thongtin_movie_payment .item_payment_center {
+    flex-direction: column;
+    font-weight: 550;
+}

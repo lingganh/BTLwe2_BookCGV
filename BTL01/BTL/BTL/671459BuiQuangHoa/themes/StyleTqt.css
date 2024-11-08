@@ -1,0 +1,237 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf6e3;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid #ff6666;
+}
+
+    header img {
+        max-width: 150px;
+    }
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+    nav a {
+        padding: 10px 20px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid #ff6666;
+        border-radius: 4px;
+        margin: 0 5px;
+    }
+
+        nav a:hover {
+            background-color: #ff6666;
+            color: white;
+        }
+
+.container {
+    max-width: 1000px;
+    padding: 20px auto 20px auto;
+    margin: 20px auto 20px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+    .profile-section img {
+        max-width: 100px;
+        border-radius: 50%;
+    }
+
+.menu-section {
+    background-color: white;
+    height: 500px;
+}
+
+.menu-section-left {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    float: left;
+}
+
+    .menu-section-left button {
+        padding: 10px;
+        margin-bottom: 5px;
+        background-color: #ddd;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+        .menu-section-left button:hover {
+            background-color: #ff6666;
+        }
+
+.menu-section-right {
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    float: right;
+    height: 500px;
+}
+
+
+.containerm {
+    width: 650px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+
+.balance {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f90;
+    text-align: right;
+    margin-top: 15px;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #f9f7ed;
+    color: #333;
+    padding: 20px 0;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Phần nội dung trong footer */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Cột trong footer */
+.footer-column {
+    width: 22%;
+    padding: 10px;
+}
+
+    /* Tiêu đề cột */
+    .footer-column h4 {
+        font-size: 16px;
+        color: #666;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* Liên kết trong footer */
+    .footer-column ul {
+        list-style: none;
+    }
+
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+
+            .footer-column ul li a {
+                color: #333;
+                text-decoration: none;
+            }
+
+                .footer-column ul li a:hover {
+                    text-decoration: underline;
+                }
+
+/* Biểu tượng mạng xã hội */
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/* Phần thông tin pháp lý */
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Logo công ty */
+.company-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Điều chỉnh trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

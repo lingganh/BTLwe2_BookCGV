@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8BFC7FD4-54F2-4A41-99BA-FD2BF6A0F6FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BTL</RootNamespace>
+    <AssemblyName>BTL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44361</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="671459BuiQuangHoa\Javascript\JsWebform3.js" />
+    <Content Include="671459BuiQuangHoa\themes\StyleCttk.css" />
+    <Content Include="671459BuiQuangHoa\themes\StyleDt.css" />
+    <Content Include="671459BuiQuangHoa\themes\StyleTqt.css" />
+    <Content Include="671459BuiQuangHoa\themes\StyleTtv.css" />
+    <Content Include="671459BuiQuangHoa\themes\Styletlmp.css" />
+    <Content Include="671459BuiQuangHoa\themes\StyleTtc.css" />
+    <Content Include="671459BuiQuangHoa\themes\StyleVc.css" />
+    <Content Include="671459BuiQuangHoa\WebForm1.aspx" />
+    <Content Include="671459BuiQuangHoa\WebForm2.aspx" />
+    <Content Include="671459BuiQuangHoa\WebForm3.aspx" />
+    <Content Include="671459BuiQuangHoa\WebForm4.aspx" />
+    <Content Include="671459BuiQuangHoa\WebForm5.aspx" />
+    <Content Include="671459BuiQuangHoa\WebForm6.aspx" />
+    <Content Include="671459BuiQuangHoa\WebForm7.aspx" />
+    <Content Include="671615HoangDieuLinh\QuanTri.aspx" />
+    <Content Include="671615HoangDieuLinh\QuanTri_HD.aspx" />
+    <Content Include="671615HoangDieuLinh\QuanTri_KH.aspx" />
+    <Content Include="671615HoangDieuLinh\QuanTri_NV.aspx" />
+    <Content Include="671615HoangDieuLinh\QuanTri_Rap.aspx" />
+    <Content Include="671615HoangDieuLinh\SuaKH.aspx" />
+    <Content Include="671615HoangDieuLinh\SuaNV.aspx" />
+    <Content Include="671615HoangDieuLinh\SuaPhim.aspx" />
+    <Content Include="671615HoangDieuLinh\theme\QuanTri_KH.aspx" />
+    <Content Include="671615HoangDieuLinh\ThemKH.aspx" />
+    <Content Include="671615HoangDieuLinh\ThemNV.aspx" />
+    <Content Include="671615HoangDieuLinh\ThemPhim.aspx" />
+    <Content Include="671615HoangDieuLinh\XoaNV.aspx" />
+    <Content Include="671635NguyenDucLong\Book_ve.aspx" />
+    <Content Include="671635NguyenDucLong\cgv_hung_vuong_plaza.aspx" />
+    <Content Include="671635NguyenDucLong\payment.aspx" />
+    <Content Include="671635NguyenDucLong\rap_cgv.aspx" />
+    <Content Include="671941DoThuTra\Chitietphim.aspx" />
+    <Content Include="671941DoThuTra\Phimdangchieu.aspx" />
+    <Content Include="671941DoThuTra\Phimsapchieu.aspx" />
+    <Content Include="672064LePhuongXuan\AboutUs.aspx" />
+    <Content Include="672064LePhuongXuan\ChinhSachbm.aspx" />
+    <Content Include="672064LePhuongXuan\ChinhSachtt.aspx" />
+    <Content Include="672064LePhuongXuan\CTUD.aspx" />
+    <Content Include="672064LePhuongXuan\DieuKhoanChung.aspx" />
+    <Content Include="672064LePhuongXuan\images\anh_nut_home.png" />
+    <Content Include="672064LePhuongXuan\images\img1.jpg" />
+    <Content Include="672064LePhuongXuan\images\img2.png" />
+    <Content Include="672064LePhuongXuan\images\img3.png" />
+    <Content Include="672064LePhuongXuan\images\img4.png" />
+    <Content Include="672064LePhuongXuan\images\img5.png" />
+    <Content Include="672064LePhuongXuan\images\img6.png" />
+    <Content Include="672064LePhuongXuan\images\img7.jpg" />
+    <Content Include="672064LePhuongXuan\images\img8.jpg" />
+    <Content Include="672064LePhuongXuan\images\img9.png" />
+    <Content Include="672064LePhuongXuan\LienHe.aspx" />
+    <Content Include="672064LePhuongXuan\UuDai.aspx" />
+    <Content Include="672064LePhuongXuan\đkgd.aspx" />
+    <Content Include="About.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="CSS\Style.css" />
+    <Content Include="CSS\Stylecgv.css" />
+    <Content Include="CSS\stylectp.css" />
+    <Content Include="CSS\stylectp2.css" />
+    <Content Include="CSS\stylepdc.css" />
+    <Content Include="CSS\stylepdc3.css" />
+    <Content Include="CSS\stylepsc.css" />
+    <Content Include="CSS\stylepsc1.css" />
+    <Content Include="CSS\stylesl.css" />
+    <Content Include="671615HoangDieuLinh\DangNhap.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="671615HoangDieuLinh\theme\TrangChu.Master" />
+    <Content Include="671615HoangDieuLinh\theme\QuanTri.Master" />
+    <Content Include="671635NguyenDucLong\theme\bookcgv.Master" />
+    <Content Include="671635NguyenDucLong\theme\bookve.Master" />
+    <Content Include="671635NguyenDucLong\theme\payment.Master" />
+    <Content Include="671941DoThuTra\Trang.Master" />
+    <Content Include="671459BuiQuangHoa\thongTinChung.Master" />
+    <Content Include="671459BuiQuangHoa\chiTietTaiKhoan.Master" />
+    <Content Include="671459BuiQuangHoa\thietLapMaPin.Master" />
+    <Content Include="671459BuiQuangHoa\theThanhVien.Master" />
+    <Content Include="671459BuiQuangHoa\theQuaTang.Master" />
+    <Content Include="671459BuiQuangHoa\diemThuong.Master" />
+    <Content Include="671459BuiQuangHoa\voucher.Master" />
+    <None Include="Scripts\jquery-3.7.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.0.js" />
+    <Content Include="Scripts\jquery-3.7.0.min.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="671615HoangDieuLinh\TrangChu.aspx" />
+    <Content Include="Style\gthieu.css" />
+    <Content Include="Style\style1.css" />
+    <Content Include="Style\style2.css" />
+    <Content Include="Style\style3.css" />
+    <Content Include="Style\style4.css" />
+    <Content Include="Style\stylesl.css" />
+    <Content Include="Video\bg1.mp4" />
+    <Content Include="Video\cgv.mp4" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="671459BuiQuangHoa\chiTietTaiKhoan.Master.cs">
+      <DependentUpon>chiTietTaiKhoan.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\chiTietTaiKhoan.Master.designer.cs">
+      <DependentUpon>chiTietTaiKhoan.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\diemThuong.Master.cs">
+      <DependentUpon>diemThuong.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\diemThuong.Master.designer.cs">
+      <DependentUpon>diemThuong.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\voucher.Master.cs">
+      <DependentUpon>voucher.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\voucher.Master.designer.cs">
+      <DependentUpon>voucher.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\theQuaTang.Master.cs">
+      <DependentUpon>theQuaTang.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\theQuaTang.Master.designer.cs">
+      <DependentUpon>theQuaTang.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\theThanhVien.Master.cs">
+      <DependentUpon>theThanhVien.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\theThanhVien.Master.designer.cs">
+      <DependentUpon>theThanhVien.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\thietLapMaPin.Master.cs">
+      <DependentUpon>thietLapMaPin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\thietLapMaPin.Master.designer.cs">
+      <DependentUpon>thietLapMaPin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\thongTinChung.Master.cs">
+      <DependentUpon>thongTinChung.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\thongTinChung.Master.designer.cs">
+      <DependentUpon>thongTinChung.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671459BuiQuangHoa\WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\DangNhap.aspx.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\DangNhap.aspx.designer.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\QuanTri.aspx.cs">
+      <DependentUpon>QuanTri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\QuanTri.aspx.designer.cs">
+      <DependentUpon>QuanTri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\QuanTri_HD.aspx.cs">
+      <DependentUpon>QuanTri_HD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\QuanTri_HD.aspx.designer.cs">
+      <DependentUpon>QuanTri_HD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\QuanTri_KH.aspx.cs">
+      <DependentUpon>QuanTri_KH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\QuanTri_KH.aspx.designer.cs">
+      <DependentUpon>QuanTri_KH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\QuanTri_NV.aspx.cs">
+      <DependentUpon>QuanTri_NV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\QuanTri_NV.aspx.designer.cs">
+      <DependentUpon>QuanTri_NV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\QuanTri_Rap.aspx.cs">
+      <DependentUpon>QuanTri_Rap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\QuanTri_Rap.aspx.designer.cs">
+      <DependentUpon>QuanTri_Rap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\SuaKH.aspx.cs">
+      <DependentUpon>SuaKH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\SuaKH.aspx.designer.cs">
+      <DependentUpon>SuaKH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\SuaNV.aspx.cs">
+      <DependentUpon>SuaNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\SuaNV.aspx.designer.cs">
+      <DependentUpon>SuaNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\theme\QuanTri.Master.cs">
+      <DependentUpon>QuanTri.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\theme\QuanTri.Master.designer.cs">
+      <DependentUpon>QuanTri.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\theme\QuanTri_KH.aspx.cs">
+      <DependentUpon>QuanTri_KH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\theme\QuanTri_KH.aspx.designer.cs">
+      <DependentUpon>QuanTri_KH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\theme\TrangChu.Master.cs">
+      <DependentUpon>TrangChu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\theme\TrangChu.Master.designer.cs">
+      <DependentUpon>TrangChu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\SuaPhim.aspx.cs">
+      <DependentUpon>SuaPhim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\SuaPhim.aspx.designer.cs">
+      <DependentUpon>SuaPhim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\ThemKH.aspx.cs">
+      <DependentUpon>ThemKH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\ThemKH.aspx.designer.cs">
+      <DependentUpon>ThemKH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\ThemNV.aspx.cs">
+      <DependentUpon>ThemNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\ThemNV.aspx.designer.cs">
+      <DependentUpon>ThemNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\ThemPhim.aspx.cs">
+      <DependentUpon>ThemPhim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\ThemPhim.aspx.designer.cs">
+      <DependentUpon>ThemPhim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\XoaNV.aspx.cs">
+      <DependentUpon>XoaNV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\XoaNV.aspx.designer.cs">
+      <DependentUpon>XoaNV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\Book_ve.aspx.cs">
+      <DependentUpon>Book_ve.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\Book_ve.aspx.designer.cs">
+      <DependentUpon>Book_ve.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\cgv_hung_vuong_plaza.aspx.cs">
+      <DependentUpon>cgv_hung_vuong_plaza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\cgv_hung_vuong_plaza.aspx.designer.cs">
+      <DependentUpon>cgv_hung_vuong_plaza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\rap_cgv.aspx.cs">
+      <DependentUpon>rap_cgv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\rap_cgv.aspx.designer.cs">
+      <DependentUpon>rap_cgv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\theme\bookcgv.Master.cs">
+      <DependentUpon>bookcgv.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\theme\bookcgv.Master.designer.cs">
+      <DependentUpon>bookcgv.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\theme\bookve.Master.cs">
+      <DependentUpon>bookve.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\theme\bookve.Master.designer.cs">
+      <DependentUpon>bookve.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\theme\payment.Master.cs">
+      <DependentUpon>payment.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671635NguyenDucLong\theme\payment.Master.designer.cs">
+      <DependentUpon>payment.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671941DoThuTra\Chitietphim.aspx.cs">
+      <DependentUpon>Chitietphim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671941DoThuTra\Chitietphim.aspx.designer.cs">
+      <DependentUpon>Chitietphim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671941DoThuTra\Phimdangchieu.aspx.cs">
+      <DependentUpon>Phimdangchieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671941DoThuTra\Phimdangchieu.aspx.designer.cs">
+      <DependentUpon>Phimdangchieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671941DoThuTra\Phimsapchieu.aspx.cs">
+      <DependentUpon>Phimsapchieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671941DoThuTra\Phimsapchieu.aspx.designer.cs">
+      <DependentUpon>Phimsapchieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="671941DoThuTra\Trang.Master.cs">
+      <DependentUpon>Trang.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671941DoThuTra\Trang.Master.designer.cs">
+      <DependentUpon>Trang.Master</DependentUpon>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\ChinhSachbm.aspx.cs">
+      <DependentUpon>ChinhSachbm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\ChinhSachbm.aspx.designer.cs">
+      <DependentUpon>ChinhSachbm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\ChinhSachtt.aspx.cs">
+      <DependentUpon>ChinhSachtt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\ChinhSachtt.aspx.designer.cs">
+      <DependentUpon>ChinhSachtt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\CTUD.aspx.cs">
+      <DependentUpon>CTUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\CTUD.aspx.designer.cs">
+      <DependentUpon>CTUD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\DieuKhoanChung.aspx.cs">
+      <DependentUpon>DieuKhoanChung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\DieuKhoanChung.aspx.designer.cs">
+      <DependentUpon>DieuKhoanChung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\LienHe.aspx.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\LienHe.aspx.designer.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\UuDai.aspx.cs">
+      <DependentUpon>UuDai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\UuDai.aspx.designer.cs">
+      <DependentUpon>UuDai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\đkgd.aspx.cs">
+      <DependentUpon>đkgd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="672064LePhuongXuan\đkgd.aspx.designer.cs">
+      <DependentUpon>đkgd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileName.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\theme\DN.Master.cs">
+      <DependentUpon>DN.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\theme\DN.Master.designer.cs">
+      <DependentUpon>DN.Master</DependentUpon>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\TrangChu.aspx.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="671615HoangDieuLinh\TrangChu.aspx.designer.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.0.min.map" />
+    <Content Include="671615HoangDieuLinh\theme\DN.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50510</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44361/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
